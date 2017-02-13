@@ -1,1 +1,1 @@
-[DEMO](https://github.com/facebook/react/wiki/Sites-Using-React)
+[DEMO](http://koti.tamk.fi/~c5tukkol/tre_talviliukumaet/)
