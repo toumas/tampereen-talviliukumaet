@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+}
+body {
+    /* The image used */
+    background-image: url("winter.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 0;
+    margin-bottom: 1%;
+}
+hr {
+    margin: 1% 0px;
+}
+a, p, button {
+    font-family: 'Crimson Text', serif;
+    text-decoration: none;
+    margin: 0;
+}
+a {
+    color: #212121;
+    font-size: 16px;
+}
+h2 {
+    margin: 0;
+}
+.warning {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+    color: #FFFDE7;
+    border-radius: 4px;
+    padding: 1%;
+    margin-top: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 18px;
+}
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.3;
+  filter: alpha(opacity=20);
+}
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+main > .container {
+    margin: 0 auto;
+    padding: 8px;
+    max-width: 960px;
+    background: white;
+    border-radius: 7px;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+#flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#showAll {
+    padding: 1%;
+    flex: 1 0 100%;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    box-shadow: 0 0;
+}
+.hidden {
+    display: none;
+}
+.out-of-bounds {
+    order: 1;
+    opacity: 0.4;
+}
+.flex-item {
+    flex: 0 0 100%;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+@media all and (min-width: 476px) {
+    #flex-container:after {
+        content: "";
+        order: 1;
+        flex: 0 1 31.3%;
+    }
+    .flex-item {
+        flex: 0 0 49.5%;
+    }
+}
+@media all and (min-width: 768px) {
+    .flex-item {
+        flex: 0 0 31.3%;
+    }
+}
